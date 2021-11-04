@@ -1,5 +1,8 @@
 package strings;
 
+import java.sql.SQLOutput;
+import java.util.Arrays;
+
 public class Strings {
 
   public static void main(String[] args) {
@@ -25,6 +28,11 @@ public class Strings {
     System.out.println("Equals? " + string.equals(" Minha String "));
     System.out.println("EqualsIgnoreCase? " + string.equalsIgnoreCase(" minha sTrinG "));
     System.out.println("Substring(1,6)=" + string.substring(1, 6));
+    System.out.println("A B C D E F G".toCharArray());
+    System.out.println(Arrays.toString("Aula de Java".split(" ")));
+    System.out.println("Aula".concat(" de Java "));
+    System.out.println("1234 abcde fg".replaceAll("[0-9]", "#"));
+
 
   }
 }
